@@ -1,0 +1,5 @@
+# Jekyll (GitHub Pages). Les balises Open Graph sont dans index.html (URLs en dur, pas de Liquid).
+# Adapter url / baseurl si besoin (assets, permaliens).
+title: "Mariage Judith & Jonas"
+url: "https://shisabbah.github.io"
+baseurl: "/judith-jonas"

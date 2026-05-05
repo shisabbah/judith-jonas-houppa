@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Mariage Judith &amp; Jonas</title>
+    <meta name="description" content="Mariage Judith Jonas — invitation." />
+    <link rel="canonical" href="https://shisabbah.github.io/judith-jonas/" />
+    <!-- Aperçu lien : URL absolue requise par WhatsApp / iMessage / Facebook (voir _config.yml url + baseurl) -->
+    <meta property="og:title" content="Mariage Judith Jonas" />
+    <meta property="og:description" content="Invitation au mariage de Judith et Jonas." />
+    <meta property="og:url" content="https://shisabbah.github.io/judith-jonas/" />
+    <meta property="og:image" content="https://shisabbah.github.io/judith-jonas/logo-lien.png" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1350" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Judith et Jonas — monogramme" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mariage Judith Jonas" />
+    <meta name="twitter:description" content="Invitation au mariage de Judith et Jonas." />
+    <meta name="twitter:image" content="https://shisabbah.github.io/judith-jonas/logo-lien.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button type="button" id="splash" class="splash" aria-label="Ouvrir l’invitation" aria-live="polite">
+      <img
+        class="splash__bg"
+        src="img.jpg"
+        alt=""
+        aria-hidden="true"
+        decoding="async"
+        fetchpriority="high"
+        draggable="false"
+      />
+      <span class="splash__scrim" aria-hidden="true"></span>
+      <span class="splash__inner">
+        <img
+          class="splash__logo"
+          src="logo.png"
+          alt=""
+          aria-hidden="true"
+          width="560"
+          height="560"
+          decoding="async"
+          fetchpriority="high"
+          draggable="false"
+        />
+        <span id="splash-thanks" class="splash__thanks" hidden aria-hidden="true">Merci pour votre confirmation.</span>
+      </span>
+    </button>
+
+    <main id="main" class="main">
+      <section class="countdown" aria-label="Décompte avant le mariage" aria-live="polite">
+        <div class="countdown__card">
+          <div class="countdown__grid">
+            <div class="countdown__unit">
+              <div class="countdown__circle">
+                <span id="cd-days" class="countdown__value">—</span>
+              </div>
+              <span class="countdown__label">Jours</span>
+            </div>
+            <div class="countdown__unit">
+              <div class="countdown__circle">
+                <span id="cd-hours" class="countdown__value">—</span>
+              </div>
+              <span class="countdown__label">Heures</span>
+            </div>
+            <div class="countdown__unit">
+              <div class="countdown__circle">
+                <span id="cd-minutes" class="countdown__value">—</span>
+              </div>
+              <span class="countdown__label">Minutes</span>
+            </div>
+            <div class="countdown__unit">
+              <div class="countdown__circle">
+                <span id="cd-seconds" class="countdown__value">—</span>
+              </div>
+              <span class="countdown__label">Secondes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="invitations">
+        <figure class="invitation-block invitation-block--transparent">
+          <figcaption class="invitation-block__title">Mairie</figcaption>
+          <img src="mairie.png" alt="Invitation mairie — cérémonie civile" width="1080" height="1920" loading="lazy" decoding="async" />
+        </figure>
+        <figure class="invitation-block invitation-block--transparent">
+          <figcaption class="invitation-block__title">Houppa</figcaption>
+          <img src="houppa1.png" alt="Invitation Houppa — cérémonie religieuse" width="1080" height="1920" loading="lazy" decoding="async" />
+        </figure>
+        <figure class="invitation-block invitation-block--transparent invitation-block--henne">
+          <figcaption class="invitation-block__title">Henné</figcaption>
+          <img src="henne.png" alt="Invitation cérémonie du henné" width="1080" height="1920" loading="lazy" decoding="async" />
+        </figure>
+      </div>
+
+      <section class="rsvp" aria-labelledby="rsvp-title">
+        <div id="rsvp-content">
+          <h2 id="rsvp-title" class="rsvp__heading">Confirmation de présence</h2>
+          <p class="rsvp__intro">Merci d’indiquer vos coordonnées et le nombre de personnes pour chaque événement.</p>
+
+          <form id="rsvp-form" class="rsvp__form">
+            <div class="rsvp__card">
+              <div class="rsvp__event">
+                <h3 class="rsvp__event-title">Mairie</h3>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="mairie-nom">Nom</label>
+                  <input class="rsvp__input" id="mairie-nom" name="mairie-nom" type="text" autocomplete="family-name" required />
+                </div>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="mairie-prenom">Prénom</label>
+                  <input class="rsvp__input" id="mairie-prenom" name="mairie-prenom" type="text" autocomplete="given-name" required />
+                </div>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="mairie-nb">Nombre de personnes</label>
+                  <input class="rsvp__input rsvp__input--number" id="mairie-nb" name="mairie-nb" type="number" min="0" step="1" inputmode="numeric" required />
+                </div>
+              </div>
+
+              <div class="rsvp__separator" aria-hidden="true"></div>
+
+              <div class="rsvp__event">
+                <h3 class="rsvp__event-title">Houppa</h3>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="houppa-nom">Nom</label>
+                  <input class="rsvp__input" id="houppa-nom" name="houppa-nom" type="text" autocomplete="family-name" required />
+                </div>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="houppa-prenom">Prénom</label>
+                  <input class="rsvp__input" id="houppa-prenom" name="houppa-prenom" type="text" autocomplete="given-name" required />
+                </div>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="houppa-nb">Nombre de personnes</label>
+                  <input class="rsvp__input rsvp__input--number" id="houppa-nb" name="houppa-nb" type="number" min="0" step="1" inputmode="numeric" required />
+                </div>
+              </div>
+
+              <div class="rsvp__separator" aria-hidden="true"></div>
+
+              <div class="rsvp__event">
+                <h3 class="rsvp__event-title">Henné</h3>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="henne-nom">Nom</label>
+                  <input class="rsvp__input" id="henne-nom" name="henne-nom" type="text" autocomplete="family-name" required />
+                </div>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="henne-prenom">Prénom</label>
+                  <input class="rsvp__input" id="henne-prenom" name="henne-prenom" type="text" autocomplete="given-name" required />
+                </div>
+                <div class="rsvp__row">
+                  <label class="rsvp__label" for="henne-nb">Nombre de personnes</label>
+                  <input class="rsvp__input rsvp__input--number" id="henne-nb" name="henne-nb" type="number" min="0" step="1" inputmode="numeric" required />
+                </div>
+              </div>
+
+              <button class="rsvp__submit" type="submit">Confirmer</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
